@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="INICIO"
+            android:textAppearance="@style/MenuTextStyle" />
+
+        <item
+            android:id="@+id/perdidos"
+            android:icon="@drawable/shop"
+            android:title="MIS PEDIDOS"
+            android:textAppearance="@style/MenuTextStyle" />
+
+        <item
+            android:id="@+id/compras"
+            android:icon="@drawable/compras"
+            android:title="MIS COMPRAS"
+            android:textAppearance="@style/MenuTextStyle" />
+
+        <item android:title="PERFIL">
+            <menu>
+                <item
+                    android:id="@+id/configuraciones"
+                    android:icon="@drawable/conf"
+                    android:title="CONFIGURACION" />
+
+                <item
+                    android:id="@+id/salir"
+                    android:icon="@drawable/salir"
+                    android:title="SALIR" />
+            </menu>
+        </item>
+
+        <item android:title="Comentarios">
+            <menu>
+                <item
+                    android:id="@+id/ayuda"
+                    android:icon="@drawable/ayuda"
+                    android:title="Ayuda" />
+
+            </menu>
+        </item>
+
+    </group>
+
+
+
+</menu>

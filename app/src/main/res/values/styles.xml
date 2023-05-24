@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+
+
+        <item name="android:textColorPrimary">@color/bgPrimary</item>
+        <item name="android:textColorSecondary">@color/bgPrimary</item>
+        <item name="android:itemBackground">@color/bgPrimary</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MyHeaderTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/montserratregular</item>
+    </style>
+
+
+
+
+</resources>
