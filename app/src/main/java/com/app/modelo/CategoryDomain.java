@@ -1,37 +1,71 @@
 package com.app.modelo;
 
-public class CategoryDomain {
-    private String  id;
-    private String title;
-    private String pic;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-    public CategoryDomain(String id, String title, String pic) {
-        this.id = id;
-        this.title = title;
-        this.pic = pic;
+import java.io.Serializable;
+
+public class CategoryDomain implements Serializable  {
+
+
+    @SerializedName("id")
+    @Expose
+    private int id;
+    @SerializedName("name")
+    @Expose
+    private String name;
+    @SerializedName("image")
+    @Expose
+
+    private String image;
+    @SerializedName("created_at")
+    @Expose
+
+    private String created_at;
+
+    @SerializedName("updated_at")
+    @Expose
+    private String updated_at;
+    public CategoryDomain() {
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getPic() {
-        return pic;
-    }
-
-    public void setPic(String pic) {
-        this.pic = pic;
-    }
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(String created_at) {
+        this.created_at = created_at;
+    }
+
+    public String getUpdated_at() {
+        return updated_at;
+    }
+
+    public void setUpdated_at(String updated_at) {
+        this.updated_at = updated_at;
     }
 }

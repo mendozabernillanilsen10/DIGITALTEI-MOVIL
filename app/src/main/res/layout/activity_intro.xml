@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/fondopp"
     android:layout_height="match_parent"
-    tools:context=".vista.IntroActivity">
+    tools:context="com.app.vista.IntroActivity">
 
 
      <androidx.viewpager.widget.ViewPager

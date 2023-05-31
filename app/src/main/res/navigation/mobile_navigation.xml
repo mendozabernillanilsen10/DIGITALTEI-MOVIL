@@ -7,59 +7,43 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.app.myapplication.ui.home.HomeFragment"
+        android:name="com.app.vista.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_nav_home_to_todoslosProductos"
-            app:destination="@id/todoslosProductos" />
+
         <action
             android:id="@+id/action_nav_home_to_MIcarritoDecompras"
             app:destination="@id/MIcarritoDecompras" />
-        <action
-            android:id="@+id/action_nav_home_to_detalleProducto"
-            app:destination="@id/detalleProducto" />
+
     </fragment>
 
     <fragment
         android:id="@+id/perdidos"
-        android:name="com.app.myapplication.pedidos"
+        android:name="com.app.vista.pedidos"
         android:label="fragment_pedidos"
         tools:layout="@layout/fragment_pedidos" />
 
     <fragment
         android:id="@+id/compras"
-        android:name="com.app.myapplication.compras"
+        android:name="com.app.vista.compras"
         android:label="fragment_compras"
         tools:layout="@layout/fragment_compras" />
     <fragment
         android:id="@+id/configuraciones"
-        android:name="com.app.myapplication.Configuraciones"
+        android:name="com.app.vista.Configuraciones"
         android:label="fragment_configuraciones"
         tools:layout="@layout/fragment_configuraciones" />
     <fragment
         android:id="@+id/ayuda"
-        android:name="com.app.myapplication.Ayuda"
+        android:name="com.app.vista.Ayuda"
         android:label="fragment_ayuda"
         tools:layout="@layout/fragment_ayuda" />
-    <fragment
-        android:id="@+id/todoslosProductos"
-        android:name="com.app.myapplication.TodoslosProductos"
-        android:label="mis productos"
-        tools:layout="@layout/fragment_todoslos_productos" >
-        <action
-            android:id="@+id/action_todoslosProductos_to_detalleProducto"
-            app:destination="@id/detalleProducto" />
-    </fragment>
+
     <fragment
         android:id="@+id/MIcarritoDecompras"
-        android:name="com.app.myapplication.MIcarritoDecompras"
+        android:name="com.app.vista.MIcarritoDecompras"
         android:label="Carrito de compras "
         tools:layout="@layout/fragment_m_icarrito_decompras" />
-    <fragment
-        android:id="@+id/detalleProducto"
-        android:name="com.app.myapplication.DetalleProducto"
-        android:label="Detalle"
-        tools:layout="@layout/fragment_detalle_producto" />
+
 
 </navigation>

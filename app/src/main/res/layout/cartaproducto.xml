@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/card_background">
+
+
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="195dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgproducto"
+            android:layout_width="105dp"
+            android:layout_height="132dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/compras" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/titlee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Impresoras"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/descriptionTxts"
+                android:layout_width="222dp"
+                android:layout_height="76dp"
+                android:layout_below="@id/titlee"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/san_francisco"
+                android:text=" Recomendado"
+                android:textColor="#2e2e2e"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_ordenear"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="125dp"
+                android:layout_marginRight="46dp"
+                android:backgroundTint="#FF8500"
+                android:fontFamily="@font/san_francisco"
+                android:text="Ordenar"
+                android:textColor="#fff"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

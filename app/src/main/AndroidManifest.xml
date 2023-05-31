@@ -12,7 +12,6 @@
     <uses-permission android:name="android.requestLegacyExternalStorage=&quot;true&quot;" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,12 +19,34 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31" >
         <activity
-            android:name=".Dasboar"
+            android:name=".registroUsuario"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.vista.detalleproducto"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.vista.lista_categoria_Menu"
+            android:exported="false"
+            android:theme="@style/tema2" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.app.vista.Dasboar"
             android:exported="false"
             android:label="@string/title_activity_dasboar"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -34,14 +55,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".vista.MainActivity"
+            android:name="com.app.vista.MainActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".vista.IntroActivity"
+            android:name="com.app.vista.IntroActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
